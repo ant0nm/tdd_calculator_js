@@ -1,10 +1,13 @@
-function add() {
+function add(firstNum, secondNum) {
+  return firstNum + secondNum;
 }
 
-function subtract() {
+function subtract(firstNum, secondNum) {
+  return firstNum - secondNum;
 }
 
-function sum() {
+function sum(numArray) {
+  return numArray.reduce((total, num) => total + num, 0);
 }
 
 module.exports = {add, subtract, sum}
